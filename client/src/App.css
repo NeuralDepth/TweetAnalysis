@@ -1,0 +1,164 @@
+/* twitter color is: #1DA1F2 */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 2rem;
+    background-color: whitesmoke;
+}
+
+.twitter-font {
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: x-large;
+}
+
+.title {
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: x-large;
+}
+
+
+.bold {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.description {
+    margin-bottom: 1rem;
+    color: grey;
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.score-text {
+    display: flex;
+    justify-content: center;
+}
+
+.scorebar-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.scorebar-element-left {
+    display: flex;
+    justify-content: flex-end;
+    border-right: black 1px solid;
+    width: 50%;
+    padding: 0.5rem 0;
+}
+
+.scorebar-element-right {
+    display: flex;
+    justify-content: flex-start;
+    border-left: black 1px solid;
+    width: 50%;
+    padding: 0.5rem 0;
+}
+
+.scorebar {
+    height: 1rem;
+    background-color: #1DA1F2;
+    transition: width 0.8 ease, background-color 0.8 ease;
+    -webkit-transition: width 0.8s ease, background-color 0.8s ease;
+    -o-transition: width 0.8 ease, background-color 0.8 ease;
+}
+
+.tweet-compose {
+    position: relative;
+    width: 100%;
+    max-width: 80rem;
+    height: 100%;
+    border-radius: 1.5rem;
+    font-size: xx-large;
+    background-color: white;
+}
+
+.twitter-icon {
+    width: 3rem;
+}
+
+.compose-header {
+    border-bottom: #1DA1F2 1px solid;
+    padding: 1.2rem 1.8rem;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.compose-body {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 90%;
+    height: 20vh;
+}
+
+.compose-footer {
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaa;
+}
+
+.reply-container {
+    display: flex;
+    align-items: center;
+    text-justify: right;
+    justify-content: space-between;
+}
+
+.pill-button {
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    font-size: large;
+    padding: 1.2rem 1.6rem;
+    background-color: black;
+}
+
+.twitter-button {
+    background-color: #1DA1F2;
+    margin-left: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 0 0.5rem;
+    }
+
+    .tweet-compose {
+        width: 95%;
+    }
+
+    .twitter-font {
+        font-size: large;
+    }
+
+    .twitter-title {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        height: 40vh;
+    }
+}
